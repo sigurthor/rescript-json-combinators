@@ -173,6 +173,10 @@ let dict = decode =>
     }
   }
 
+let keyArray = decode => (. json) => dict(decode)(. json)->Js.Dict.values
+let keyList = decode => (. json) => dict(decode)(. json)->Js.Dict.values->Array.to_list
+
+
 let field = (key, decode) =>
   (. json) => {
     if Js.typeof(json) != "object" || Js.Array.isArray(json) || Obj.magic(json) == Js.null {
