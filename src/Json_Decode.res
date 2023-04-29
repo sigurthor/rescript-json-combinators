@@ -282,6 +282,7 @@ let object = f =>
     let withDefault = (. val, key, decode) => {
       try decode(. %raw("json[key]")) catch {
       | DecodeError(_) => val
+      | _ => val
       }
     }
 
