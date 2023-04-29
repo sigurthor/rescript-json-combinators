@@ -173,9 +173,11 @@ let dict = decode =>
     }
   }
 
-let keyArray = decode => (. json) => dict(decode)(. json)->Js.Dict.values
-let keyList = decode => (. json) => dict(decode)(. json)->Js.Dict.values->Array.to_list
+let keyArray = decode => (. json) => dict(decode)(. json)->Js.Dict.entries
+let keyList = decode => (. json) => dict(decode)(. json)->Js.Dict.entries->Array.to_list
 
+let keyArrayValues = decode => (. json) => dict(decode)(. json)->Js.Dict.values
+let keyListValues = decode => (. json) => dict(decode)(. json)->Js.Dict.values->Array.to_list
 
 let field = (key, decode) =>
   (. json) => {

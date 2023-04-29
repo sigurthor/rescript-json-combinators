@@ -33,8 +33,10 @@ let tuple2: (t<'a>, t<'b>) => t<('a, 'b)>
 let tuple3: (t<'a>, t<'b>, t<'c>) => t<('a, 'b, 'c)>
 let tuple4: (t<'a>, t<'b>, t<'c>, t<'d>) => t<('a, 'b, 'c, 'd)>
 let dict: t<'a> => t<Js.Dict.t<'a>>
-let keyArray: t<'a> => t<array<'a>>
-let keyList: t<'a> => t<list<'a>>
+let keyArray: t<'a> => t<array<(string,'a)>>
+let keyList: t<'a> => t<list<(string,'a)>>
+let keyArrayValues: t<'a> => t<array<'a>>
+let keyListValues: t<'a> => t<list<'a>>
 let field: (string, t<'a>) => t<'a>
 
 let oneOf: array<t<'a>> => t<'a>
