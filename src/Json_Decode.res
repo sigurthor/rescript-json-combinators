@@ -5,6 +5,7 @@ type t<'a> = (. Js.Json.t) => 'a
 type fieldDecoders = {
   optional: 'a. (. string, t<'a>) => option<'a>,
   required: 'a. (. string, t<'a>) => 'a,
+  withDefault: 'a. (. 'a, string, t<'a>) => 'a,
   oneOf: 'a. (. array<(string, t<'a>)>) => 'a,
 }
 
@@ -272,7 +273,13 @@ let object = f =>
       }
     }
 
-    f({optional, required, oneOf})
+    let withDefault = (. val, key, decode) => {
+      try decode(. %raw("json[key]")) catch {
+      | DecodeError(_) => val
+      }
+    }
+
+    f({optional, required, oneOf, withDefault})
   }
 
 let map = (decode, f) => (. json) => f(. decode(. json))
