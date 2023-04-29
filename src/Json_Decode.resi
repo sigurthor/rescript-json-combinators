@@ -3,6 +3,7 @@ type t<'a>
 type fieldDecoders = {
   optional: 'a. (. string, t<'a>) => option<'a>,
   required: 'a. (. string, t<'a>) => 'a,
+  oneOf: 'a. (. array<(string, t<'a>)>) => 'a,
 }
 
 exception DecodeError(string)
