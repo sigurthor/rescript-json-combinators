@@ -1,6 +1,6 @@
 {
   "name": "@glennsl/rescript-json-combinators",
-  "version": "1.1.4",
+  "version": "1.4.0",
   "description": "Combinator library for JSON decoding and encoding. ",
   "scripts": {
     "build": "rescript build -with-deps",
@@ -8,6 +8,9 @@
     "clean": "rescript clean",
     "fmt": "rescript format -all",
     "test": "true"
+  },
+  "engines": {
+    "node": "*"
   },
   "repository": {
     "type": "git",
@@ -28,11 +31,6 @@
     "bsconfig.json"
   ],
   "devDependencies": {
-    "rescript": "^10.1.4"
-  },
-  "pnpm": {
-    "ignoredBuiltDependencies": [
-      "rescript"
-    ]
+    "rescript": "^9.1.4"
   }
 }

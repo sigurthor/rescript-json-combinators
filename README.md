@@ -117,6 +117,16 @@ Please see [LICENSE.LGPL-3.0](https://github.com/glennsl/rescript-json-combinato
 
 ## Changes
 
+### 1.4.0
+- explicitly curried encode combinators to reduce breakage in rescript 11 uncurried mode
+- updated examples to rescript 11
+
+### 1.3.0
+- add `Decode.indirect` to help with decoding recursive data structures
+
+### 1.2.0
+- add `Decode.flatMap`
+
 ### 1.1.0
 - recript v11-compatible formatting (#3)
 
