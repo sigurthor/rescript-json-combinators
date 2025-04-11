@@ -1,5 +1,5 @@
 {
-  "name": "@glennsl/rescript-json-combinators",
+  "name": "@sigurthor/rescript-json-combinators",
   "namespace": "JsonCombinators",
   "sources": [
     "src",
