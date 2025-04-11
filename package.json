@@ -29,5 +29,10 @@
   ],
   "devDependencies": {
     "rescript": "^10.1.4"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "rescript"
+    ]
   }
 }
