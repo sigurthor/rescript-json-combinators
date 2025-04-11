@@ -80,7 +80,7 @@ Optionally, add this to automatically open the library in order to use `Json.Enc
 backwards compatible. And while for the most part is does share the same design principles,there are also some notable differences:
 
 * Decoders have been made abstract. While the internal representation is still the same, a function that takes a `Js.Json.t`
-and returns either the decoded value or raises an exception, they can no longer be called directly. Instead they have to be run
+and returns either the decoded value or throws an exception, they can no longer be called directly. Instead they have to be run
 via `Decode.decode`. This is in order to ensure that the `DecodeError` exceptions don't leak and returns a `result`
 instead. Custom decoders can still be created with `Decode.custom`.
 

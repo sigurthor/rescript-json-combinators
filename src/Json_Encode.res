@@ -20,12 +20,12 @@ let list = encode => l =>
   switch l {
   | list{} => jsonArray([])
   | list{hd, ...tl} =>
-    let arr = Array.make(l->List.length, hd->encode)
+    let arr = Array.make(~length=l->List.length, hd->encode)
     let rec fill = (i, l) =>
       switch l {
       | list{} => arr
       | list{hd, ...tl} =>
-        Array.unsafe_set(arr, i, hd->encode)
+        Array.set(arr, i, hd->encode)
         fill(i + 1, tl)
       }
     fill(1, tl)->jsonArray
@@ -54,7 +54,7 @@ let tuple3 = (encodeA, encodeB, encodeC) => ((a, b, c)) =>
 let tuple4 = (encodeA, encodeB, encodeC, encodeD) => ((a, b, c, d)) =>
   [a->encodeA, b->encodeB, c->encodeC, d->encodeD]->jsonArray
 
-let dict = encode => dict => Js.Dict.map(v => encode(v), dict)->jsonDict
+let dict = encode => dict => jsonDict(Js.Dict.map(v => encode(v), dict))
 
 module Unsafe = {
   external object: {..} => Js.Json.t = "%identity"
