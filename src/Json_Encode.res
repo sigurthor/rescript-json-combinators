@@ -41,25 +41,22 @@ let option = encode =>
     | Some(v) => v->encode
     }
 
-let withDefault = (default, encode) =>
-  opt =>
-    switch opt {
-    | None => default
-    | Some(v) => v->encode
-    }
+let withDefault = (default, encode, opt) =>
+  switch opt {
+  | None => default
+  | Some(v) => v->encode
+  }
 
 let date = date => date->Js.Date.toJSONUnsafe->string
 
-let pair = (encodeA, encodeB) => ((a, b)) => [a->encodeA, b->encodeB]->jsonArray
-let tuple2 = (encodeA, encodeB) => ((a, b)) => [a->encodeA, b->encodeB]->jsonArray
-let tuple3 = (encodeA, encodeB, encodeC) =>
-  ((a, b, c)) => [a->encodeA, b->encodeB, c->encodeC]->jsonArray
-let tuple4 = (encodeA, encodeB, encodeC, encodeD) =>
-  ((a, b, c, d)) => [a->encodeA, b->encodeB, c->encodeC, d->encodeD]->jsonArray
+let pair = (encodeA, encodeB, (a, b)) => [a->encodeA, b->encodeB]->jsonArray
+let tuple2 = (encodeA, encodeB, (a, b)) => [a->encodeA, b->encodeB]->jsonArray
+let tuple3 = (encodeA, encodeB, encodeC, (a, b, c)) =>
+  [a->encodeA, b->encodeB, c->encodeC]->jsonArray
+let tuple4 = (encodeA, encodeB, encodeC, encodeD, (a, b, c, d)) =>
+  [a->encodeA, b->encodeB, c->encodeC, d->encodeD]->jsonArray
 
-let dict = encode => dict => jsonDict(Js.Dict.map(v => encode(v), dict))
-
-let dictOf = (encode, dict) => Js.Dict.map(v => encode(v), dict)->jsonDict
+let dict = (encode, dict) => Js.Dict.map(v => encode(v), dict)->jsonDict
 
 module Unsafe = {
   external object: {..} => Js.Json.t = "%identity"
