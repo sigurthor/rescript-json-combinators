@@ -9,16 +9,16 @@ importers:
   .:
     devDependencies:
       rescript:
-        specifier: 12.0.0-alpha.11
-        version: 12.0.0-alpha.11
+        specifier: 11.1.4
+        version: 11.1.4
 
 packages:
 
-  rescript@12.0.0-alpha.11:
-    resolution: {integrity: sha512-J9e7T44VfFPrim9BH/1I0M7ywpK2AUB9c6Y+lxoUAtNbD53qc/IKqNnA0h9V19rZr8ZBlTQ7RYvQZJjrMToozg==}
-    engines: {node: '>=20.11.0'}
+  rescript@11.1.4:
+    resolution: {integrity: sha512-0bGU0bocihjSC6MsE3TMjHjY0EUpchyrREquLS8VsZ3ohSMD+VHUEwimEfB3kpBI1vYkw3UFZ3WD8R28guz/Vw==}
+    engines: {node: '>=10'}
     hasBin: true
 
 snapshots:
 
-  rescript@12.0.0-alpha.11: {}
+  rescript@11.1.4: {}

@@ -13,7 +13,7 @@ let parse = str =>
 let parseExn = str =>
   try str->Js.Json.parseExn catch {
   | Js.Exn.Error(ex) =>
-    throw(ParseError(ex->Js.Exn.message->Js.Option.getWithDefault("Unknown error", _)))
+    raise(ParseError(ex->Js.Exn.message->Js.Option.getWithDefault("Unknown error", _)))
   }
 
 @val external stringify: Js.Json.t => string = "JSON.stringify"

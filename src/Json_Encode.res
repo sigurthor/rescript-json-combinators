@@ -21,7 +21,7 @@ let list = encode =>
     switch l {
     | list{} => jsonArray([])
     | list{hd, ...tl} =>
-      let arr = Array.make(~length=l->List.length, hd->encode)
+      let arr = Array.make(l->List.length, hd->encode)
       let rec fill = (i, l) =>
         switch l {
         | list{} => arr
