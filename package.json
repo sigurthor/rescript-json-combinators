@@ -29,7 +29,7 @@
   "homepage": "https://github.com/glennsl/rescript-json-combinators#readme",
   "files": [
     "src/*.res*",
-    "bsconfig.json"
+    "rescript.json"
   ],
   "devDependencies": {
     "rescript": "12.0.0-beta.12",
