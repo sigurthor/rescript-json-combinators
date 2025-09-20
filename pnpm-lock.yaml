@@ -9,75 +9,69 @@ importers:
   .:
     devDependencies:
       '@rescript/darwin-arm64':
-        specifier: 12.0.0-beta.12
-        version: 12.0.0-beta.12
+        specifier: 12.0.0-beta.6
+        version: 12.0.0-beta.6
       rescript:
-        specifier: 12.0.0-beta.12
-        version: 12.0.0-beta.12
+        specifier: 12.0.0-beta.6
+        version: 12.0.0-beta.6
 
 packages:
 
-  '@rescript/darwin-arm64@12.0.0-beta.12':
-    resolution: {integrity: sha512-6tz3ek5gGWz1f8MzZ6+LAouXqCCWfkQ5a26op1pZe+2vVb6HEbCONYNwelJBNWUXI+LQE+2QKZiE/Jw3dO/XfQ==}
+  '@rescript/darwin-arm64@12.0.0-beta.6':
+    resolution: {integrity: sha512-/uKnelk0zfTLeckZXS+zIDV7QNSZ1gFEov57AIdNwFBUwaVxrNDheU9kwN4Dqk3Nv3fXuSkOoniLn8vdQE2zlw==}
     engines: {node: '>=20.11.0'}
+    cpu: [arm64]
     os: [darwin]
 
-  '@rescript/darwin-x64@12.0.0-beta.12':
-    resolution: {integrity: sha512-P3Hm5tIhVfl1QFMbF8og/tH7Xsa08qNTQROw75nASpByiReUMWjlY1tz1uH+YAEnfAWVzJ/mWFnyluUVz3WIKg==}
+  '@rescript/darwin-x64@12.0.0-beta.6':
+    resolution: {integrity: sha512-2W7EYHESETClXVhYan2pvEw2OsOEBZEEXmGuOSVYDhf/Pmi+z9ksKmf+omeJRlrV6SFyBzJ0opvAUwzMCietnw==}
     engines: {node: '>=20.11.0'}
     cpu: [x64]
     os: [darwin]
 
-  '@rescript/linux-arm64@12.0.0-beta.12':
-    resolution: {integrity: sha512-gPrwO5+zWP5YrISXU+e4s8HJx2fNrAjTDCpLGRRn6p5ERP3f/xX0hCI7ZarsCY40n6z0QpASJuhJeCKEo2m7LA==}
+  '@rescript/linux-arm64@12.0.0-beta.6':
+    resolution: {integrity: sha512-J9hhbU1gwVkqXQMFv9tmmizZmry8u2JI8qep1i2g5fK5w8ijkB6YCOdIIk0aUzVJ5U7uNCPuTLAdf6GNb6T/ug==}
     engines: {node: '>=20.11.0'}
     cpu: [arm64]
     os: [linux]
 
-  '@rescript/linux-x64@12.0.0-beta.12':
-    resolution: {integrity: sha512-fuiAvmX/61l5dOnVxFFmwoeR+UHo3wh1qhJPltP82MVAX2QqdFkFDBQyaOsaKjKQmJMeQ7AzoxDMauO3oBvUwQ==}
+  '@rescript/linux-x64@12.0.0-beta.6':
+    resolution: {integrity: sha512-vRnGVNYXJ0vNJRf1IbSVss3HGAxLqGrrNSzWdlVCAYp4wy03M2XET1cLaoPzsES6zxhCfzkGlPwJTKxGf3zlug==}
     engines: {node: '>=20.11.0'}
     cpu: [x64]
     os: [linux]
 
-  '@rescript/runtime@12.0.0-beta.12':
-    resolution: {integrity: sha512-57c9/m7IjDed30Tkj+UfCpB7wWozF8iPOKO1NJKcH6eAvAhKdVVRpgOw6GKguzcA7TA6Wi8o4DwHg9HB7fZUFQ==}
-
-  '@rescript/win32-x64@12.0.0-beta.12':
-    resolution: {integrity: sha512-V0fnPeqAHyg1W4TAbXeApraM4fYbbr2eavn2DxVN3JNRS+bzHiX2yJDfDlOfMRrh2VwFQEo9vPyranawQp99SQ==}
+  '@rescript/win32-x64@12.0.0-beta.6':
+    resolution: {integrity: sha512-aDNH0Q5j7GwXJpb3nF7PAriUjuzW0G2CT3X4SIxsJm51Yzc1T1p40VBKLOWFjQbE6o6kDNiGlUN1bYR6RvXRxw==}
     engines: {node: '>=20.11.0'}
     cpu: [x64]
     os: [win32]
 
-  rescript@12.0.0-beta.12:
-    resolution: {integrity: sha512-sP7+lijrcuLAS3rkRRCLZzvPcTHrCo4hl1spDSjI7jOysRO0XQ8ptOwMEvEsewINSdZ1jAerqv4jVChLFJ8M7w==}
+  rescript@12.0.0-beta.6:
+    resolution: {integrity: sha512-y6xc09gIP/YRNNKvOgOACE+H1mE/MbP6GlIvjMol/U7rQ2VQWYWkxFs+UsAUdcHaHkPaY/ZyusL7EFGFIuO92A==}
     engines: {node: '>=20.11.0'}
     hasBin: true
 
 snapshots:
 
-  '@rescript/darwin-arm64@12.0.0-beta.12': {}
+  '@rescript/darwin-arm64@12.0.0-beta.6': {}
 
-  '@rescript/darwin-x64@12.0.0-beta.12':
+  '@rescript/darwin-x64@12.0.0-beta.6':
     optional: true
 
-  '@rescript/linux-arm64@12.0.0-beta.12':
+  '@rescript/linux-arm64@12.0.0-beta.6':
     optional: true
 
-  '@rescript/linux-x64@12.0.0-beta.12':
+  '@rescript/linux-x64@12.0.0-beta.6':
     optional: true
 
-  '@rescript/runtime@12.0.0-beta.12': {}
-
-  '@rescript/win32-x64@12.0.0-beta.12':
+  '@rescript/win32-x64@12.0.0-beta.6':
     optional: true
 
-  rescript@12.0.0-beta.12:
-    dependencies:
-      '@rescript/runtime': 12.0.0-beta.12
+  rescript@12.0.0-beta.6:
     optionalDependencies:
-      '@rescript/darwin-arm64': 12.0.0-beta.12
-      '@rescript/darwin-x64': 12.0.0-beta.12
-      '@rescript/linux-arm64': 12.0.0-beta.12
-      '@rescript/linux-x64': 12.0.0-beta.12
-      '@rescript/win32-x64': 12.0.0-beta.12
+      '@rescript/darwin-arm64': 12.0.0-beta.6
+      '@rescript/darwin-x64': 12.0.0-beta.6
+      '@rescript/linux-arm64': 12.0.0-beta.6
+      '@rescript/linux-x64': 12.0.0-beta.6
+      '@rescript/win32-x64': 12.0.0-beta.6
