@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/glennsl/rescript-json-combinators#readme",
   "files": [
-    "src/*.res*",
+     "src/*.*",
     "rescript.json"
   ],
   "devDependencies": {
