@@ -27,9 +27,11 @@
     "url": "https://github.com/glennsl/rescript-json-combinators/issues"
   },
   "homepage": "https://github.com/glennsl/rescript-json-combinators#readme",
-  "files": [
-     "src/*.*",
-    "rescript.json"
+ "files": [
+    "src/**/*.res.mjs",
+    "rescript.json",
+    "README.md",
+    "LICENSE"
   ],
   "devDependencies": {
     "rescript": "12.0.0-beta.12",
