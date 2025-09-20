@@ -1,6 +1,6 @@
 {
   "name": "@sigurthor/rescript-json-combinators",
-  "version": "1.4.0-seh.7",
+  "version": "1.4.0-seh.8",
   "type": "module",
   "description": "Combinator library for JSON decoding and encoding. ",
   "scripts": {
@@ -26,7 +26,7 @@
     "url": "https://github.com/glennsl/rescript-json-combinators/issues"
   },
   "homepage": "https://github.com/glennsl/rescript-json-combinators#readme",
- "files": [
+  "files": [
     "src/**/*.res.mjs",
     "rescript.json",
     "README.md",
