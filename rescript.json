@@ -3,8 +3,9 @@
   "namespace": "JsonCombinators",
      "package-specs": {
         "module": "esmodule",
-        "in-source": true
-  },
+        "in-source": false
+  },    
+  "suffix": ".res.mjs",
   "sources": [
     "src",
     {
