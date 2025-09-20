@@ -1,6 +1,6 @@
 {
   "name": "@sigurthor/rescript-json-combinators",
-  "version": "1.4.0-seh.5",
+  "version": "1.4.0-seh.6",
   "type": "module",
   "description": "Combinator library for JSON decoding and encoding. ",
   "scripts": {
