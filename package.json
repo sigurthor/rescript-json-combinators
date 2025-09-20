@@ -4,8 +4,8 @@
   "type": "module",
   "description": "Combinator library for JSON decoding and encoding. ",
   "scripts": {
-    "build": "rescript build -with-deps",
-    "start": "rescript build -w -with-deps",
+    "build": "rescript build ",
+    "start": "rescript build ",
     "clean": "rescript clean",
     "fmt": "rescript format -all",
     "test": "true"
