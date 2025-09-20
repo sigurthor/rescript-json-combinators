@@ -9,76 +9,76 @@ importers:
   .:
     devDependencies:
       '@rescript/darwin-arm64':
-        specifier: 12.0.0-beta.12
-        version: 12.0.0-beta.12
+        specifier: 12.0.0-beta.6
+        version: 12.0.0-beta.6
       rescript:
-        specifier: 12.0.0-beta.12
-        version: 12.0.0-beta.12
+        specifier: 12.0.0-beta.6
+        version: 12.0.0-beta.6
 
 packages:
 
-  '@rescript/darwin-arm64@12.0.0-beta.12':
+  '@rescript/darwin-arm64@12.0.0-beta.6':
     resolution: {integrity: sha512-6tz3ek5gGWz1f8MzZ6+LAouXqCCWfkQ5a26op1pZe+2vVb6HEbCONYNwelJBNWUXI+LQE+2QKZiE/Jw3dO/XfQ==}
     engines: {node: '>=20.11.0'}
     cpu: [arm64]
     os: [darwin]
 
-  '@rescript/darwin-x64@12.0.0-beta.12':
+  '@rescript/darwin-x64@12.0.0-beta.6':
     resolution: {integrity: sha512-P3Hm5tIhVfl1QFMbF8og/tH7Xsa08qNTQROw75nASpByiReUMWjlY1tz1uH+YAEnfAWVzJ/mWFnyluUVz3WIKg==}
     engines: {node: '>=20.11.0'}
     cpu: [x64]
     os: [darwin]
 
-  '@rescript/linux-arm64@12.0.0-beta.12':
+  '@rescript/linux-arm64@12.0.0-beta.6':
     resolution: {integrity: sha512-gPrwO5+zWP5YrISXU+e4s8HJx2fNrAjTDCpLGRRn6p5ERP3f/xX0hCI7ZarsCY40n6z0QpASJuhJeCKEo2m7LA==}
     engines: {node: '>=20.11.0'}
     cpu: [arm64]
     os: [linux]
 
-  '@rescript/linux-x64@12.0.0-beta.12':
+  '@rescript/linux-x64@12.0.0-beta.6':
     resolution: {integrity: sha512-fuiAvmX/61l5dOnVxFFmwoeR+UHo3wh1qhJPltP82MVAX2QqdFkFDBQyaOsaKjKQmJMeQ7AzoxDMauO3oBvUwQ==}
     engines: {node: '>=20.11.0'}
     cpu: [x64]
     os: [linux]
 
-  '@rescript/runtime@12.0.0-beta.12':
+  '@rescript/runtime@12.0.0-beta.6':
     resolution: {integrity: sha512-57c9/m7IjDed30Tkj+UfCpB7wWozF8iPOKO1NJKcH6eAvAhKdVVRpgOw6GKguzcA7TA6Wi8o4DwHg9HB7fZUFQ==}
 
-  '@rescript/win32-x64@12.0.0-beta.12':
+  '@rescript/win32-x64@12.0.0-beta.6':
     resolution: {integrity: sha512-V0fnPeqAHyg1W4TAbXeApraM4fYbbr2eavn2DxVN3JNRS+bzHiX2yJDfDlOfMRrh2VwFQEo9vPyranawQp99SQ==}
     engines: {node: '>=20.11.0'}
     cpu: [x64]
     os: [win32]
 
-  rescript@12.0.0-beta.12:
+  rescript@12.0.0-beta.6:
     resolution: {integrity: sha512-sP7+lijrcuLAS3rkRRCLZzvPcTHrCo4hl1spDSjI7jOysRO0XQ8ptOwMEvEsewINSdZ1jAerqv4jVChLFJ8M7w==}
     engines: {node: '>=20.11.0'}
     hasBin: true
 
 snapshots:
 
-  '@rescript/darwin-arm64@12.0.0-beta.12': {}
+  '@rescript/darwin-arm64@12.0.0-beta.6': {}
 
-  '@rescript/darwin-x64@12.0.0-beta.12':
+  '@rescript/darwin-x64@12.0.0-beta.6':
     optional: true
 
-  '@rescript/linux-arm64@12.0.0-beta.12':
+  '@rescript/linux-arm64@12.0.0-beta.6':
     optional: true
 
-  '@rescript/linux-x64@12.0.0-beta.12':
+  '@rescript/linux-x64@12.0.0-beta.6':
     optional: true
 
-  '@rescript/runtime@12.0.0-beta.12': {}
+  '@rescript/runtime@12.0.0-beta.6': {}
 
-  '@rescript/win32-x64@12.0.0-beta.12':
+  '@rescript/win32-x64@12.0.0-beta.6':
     optional: true
 
-  rescript@12.0.0-beta.12:
+  rescript@12.0.0-beta.6:
     dependencies:
-      '@rescript/runtime': 12.0.0-beta.12
+      '@rescript/runtime': 12.0.0-beta.6
     optionalDependencies:
-      '@rescript/darwin-arm64': 12.0.0-beta.12
-      '@rescript/darwin-x64': 12.0.0-beta.12
-      '@rescript/linux-arm64': 12.0.0-beta.12
-      '@rescript/linux-x64': 12.0.0-beta.12
-      '@rescript/win32-x64': 12.0.0-beta.12
+      '@rescript/darwin-arm64': 12.0.0-beta.6
+      '@rescript/darwin-x64': 12.0.0-beta.6
+      '@rescript/linux-arm64': 12.0.0-beta.6
+      '@rescript/linux-x64': 12.0.0-beta.6
+      '@rescript/win32-x64': 12.0.0-beta.6

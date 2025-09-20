@@ -1,11 +1,6 @@
 {
   "name": "@sigurthor/rescript-json-combinators",
   "namespace": "JsonCombinators",
-     "package-specs": {
-        "module": "esmodule",
-        "in-source": true
-  },    
-  "suffix": ".res.mjs",
   "sources": [
     "src",
     {
