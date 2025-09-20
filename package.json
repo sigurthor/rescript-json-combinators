@@ -7,7 +7,6 @@
     "build": "rescript build ",
     "start": "rescript build ",
     "clean": "rescript clean",
-    "fmt": "rescript format -all",
     "test": "true"
   },
   "engines": {
